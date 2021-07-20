@@ -1,0 +1,20 @@
+env:
+  es2021: true
+  node: true
+extends:
+  - standard
+parser: "@typescript-eslint/parser"
+parserOptions:
+  ecmaVersion: 12
+  sourceType: module
+plugins:
+  - "@typescript-eslint"
+rules:
+  {
+    "indent": ["error", "tab"],
+    "no-mixed-spaces-and-tabs": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "no-dupe-class-members": "off",
+    "no-useless-constructor": "off",
+    "no-tabs": "off",
+  }
